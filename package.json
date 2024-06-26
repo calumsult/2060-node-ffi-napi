@@ -1,6 +1,6 @@
 {
   "name": "@2060.io/ffi-napi",
-  "version": "4.0.9",
+  "version": "4.0.10",
   "license": "MIT",
   "author": "Anna Henningsen <anna@addaleax.net>",
   "contributors": [
@@ -45,6 +45,8 @@
   },
   "scripts": {
     "install": "node-gyp-build",
+    "gconfigure": "node-gyp configure",
+    "gbuild": "node-gyp build",
     "prebuild": "prebuildify --napi --tag-armv --tag-uv",
     "release": "release-it",
     "test": "node-gyp rebuild --directory test && nyc mocha --expose-gc --reporter spec"
