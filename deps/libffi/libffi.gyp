@@ -69,13 +69,13 @@
             'msvs_cygwin_shell': 0,
             'extension': 'preasm',
             'inputs': [
+                '<(module_root_dir)/deps/libffi/preprocess_asm.cmd',
             ],
             'outputs': [
               '<(INTERMEDIATE_DIR)/<(RULE_INPUT_ROOT).asm',
             ],
             'action': [
-              'call',
-              'preprocess_asm.cmd',
+                '<(module_root_dir)/deps/libffi/preprocess_asm.cmd',
                 'include',
                 'config/<(OS)/<(target_arch)',
                 '<(RULE_INPUT_PATH)',
