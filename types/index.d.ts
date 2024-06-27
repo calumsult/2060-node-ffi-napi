@@ -5,7 +5,7 @@
 
 /// <reference types="node" />
 
-import ref = require('@2060.io/ref-napi');
+import ref = require('ref-napi');
 import ref_struct = require('ref-struct-di');
 import StructType = ref_struct.StructType;
 
